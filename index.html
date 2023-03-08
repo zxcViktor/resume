@@ -4,24 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="kindex.css">
     <meta name="description" content="Моя первая страничка создана своими руками">
     <meta name="keywords" content="html, course, css, develop">
     <meta name="author" content="Viktor Ivanov">
     <title>My page</title>
 </head>
 <body>
-    <img src="https://sun9-38.userapi.com/impf/c836520/v836520239/3db2b/3rAZzmH7zmw.jpg?size=1280x960&quality=96&sign=2f0b6584f3fbf2d294916d18426b4a3b&type=album" alt="My face" width="300">
-
+    <div class="container">
+<div class="start">
+<div class="img">
+    <img src="https://sun9-38.userapi.com/impf/c836520/v836520239/3db2b/3rAZzmH7zmw.jpg?size=1280x960&quality=96&sign=2f0b6584f3fbf2d294916d18426b4a3b&type=album" alt="My face" class="avatarka"></div>
+    <div class="center_block">
  <h1>Виктор Иванов</h1>
-
- <p>Начинающий <strong> frontend </strong> разработчик. </p>
+<div class="info">
+ <p><span>Начинающий</span> <strong> frontend </strong> разработчик. </p>
  <p>Очень люблю <em> програмировать</em>, мне это <em> интересно</em>. </p> 
 
+ </div>
+ <div id="sities">
     <h4>Список социальных сетей</h4>
-    <a href="https://vk.com/vityamashina1" target="_blank">Вконтакте</a>
-     | <a href="https://www.instagram.com/" target="_blank"> Instagram</a> 
-     | <a href="https://web.telegram.org/k/" target="_blank">Telegram</a>
-
+    <a href="https://vk.com/vityamashina1" target="_blank" class="links">Вконтакте</a>
+     | <a href="https://www.instagram.com/" target="_blank" class="links"> Instagram</a> 
+     | <a href="https://web.telegram.org/k/" target="_blank" class="links telega">Telegram</a>
+    </div>
+</div>
+    </div>
+<div class="card hobby">
      <h2>Мои хобби:</h2>
      <ol>
         <li>Програмирование</li>
@@ -29,7 +38,10 @@
         <li>Игры</li>
         <li>Музыка</li>
      </ol>
+    </div>
 
+    <div class="card job">
+    
      <h2>Опыт работы:</h2>
      <table>
         <thead>
@@ -61,22 +73,28 @@
             </tr>
         </tbody>
      </table>
-
+    </div>
+<div class="card coment">
      <h2>Связаться со мной:</h2>
      <form action="">
-        <div>
+        <div class="form_row">
+
+        <div class="form_group">
             <label for="name">Ваше имя</label>
             <input type="text" id="name" placeholder="Введите имя">
         </div>
-        <div>
+        <div class="form_group">
             <label for="mail">Ваше email</label>
             <input type="email" id="mail" placeholder="Введите email">
         </div>
-        <div>
+        </div>
+        <div class="form_group">
             <label for="message">Ваше сообщение:</label><br>
             <textarea id="message" cols="15" rows="5" placeholder="Введите сообщение"></textarea>
         </div>
-        <button type="submit">Отправить!</button>
+        <button type="submit" class="btn">Отправить!</button>
      </form>
+    </div>
+</div>
 </body>
 </html>
